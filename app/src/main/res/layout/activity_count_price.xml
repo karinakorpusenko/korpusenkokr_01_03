@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountPriceActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="на главное меню"
+            android:textColor="@color/c2" />
+
+        <ImageButton
+            android:id="@+id/goBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/arr1"
+            android:fontFamily="sans-serif-medium"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="text"
+            android:text="Расчет стоимости"
+            android:textColor="@color/c1"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="519dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/c0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="323dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/text"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:text="Выберите один из вариантов ниже"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="350dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/c0"
+            android:text="выберите тип квартиры"
+            android:visibility="visible"
+            android:background="@drawable/text"
+            android:entries="@array/kvrt" />
+
+        <EditText
+            android:id="@+id/CountM"
+            android:layout_width="161dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:hint="Введите количество метров"
+            android:inputType="number"
+
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/rasButton"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rec1"
+            android:gravity="center"
+            android:text="Рассчитать"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="161dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/text"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="результат"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

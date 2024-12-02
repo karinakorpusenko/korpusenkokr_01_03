@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="365dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="text"
+            android:text="Результат расчета"
+            android:textColor="@color/c1"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="519dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/c0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/countM"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/text"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="количество метров"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/resText"
+            android:layout_width="161dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/text"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="результат"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/regButton"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rec1"
+            android:text="Регистрация"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
